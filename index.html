@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuenSabor - Restaurante & Catering</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Montserrat', Arial, sans-serif; margin:0; background:#fff8f0; color:#333;}
+        header { background:#d35400; color:#fff; padding:20px 0; text-align:center;}
+        nav a { color:#fff; margin:0 15px; text-decoration:none; font-weight:700;}
+        .hero { background:url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat; color:#fff; padding:80px 20px; text-align:center;}
+        .hero h1 { font-size:3em; margin-bottom:10px;}
+        .hero p { font-size:1.5em;}
+        section { max-width:900px; margin:40px auto; padding:20px; background:#fff; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.07);}
+        h2 { color:#d35400;}
+        .menu-items { display:flex; gap:20px; flex-wrap:wrap; justify-content:center;}
+        .menu-item { background:#fff8f0; border-radius:8px; box-shadow:0 1px 4px rgba(0,0,0,0.05); width:220px; padding:15px; text-align:center;}
+        .menu-item img { width:100%; border-radius:8px;}
+        form { display:flex; flex-direction:column; gap:10px;}
+        input, textarea, select { padding:8px; border-radius:5px; border:1px solid #ccc;}
+        button { background:#d35400; color:#fff; border:none; padding:10px; border-radius:5px; font-weight:700; cursor:pointer;}
+        button:hover { background:#e67e22;}
+        footer { background:#222; color:#fff; text-align:center; padding:20px 0; margin-top:40px;}
+        .redes a { color:#fff; margin:0 8px; font-size:1.2em;}
+        @media (max-width:700px) {
+            .menu-items { flex-direction:column; align-items:center;}
+            section { margin:20px 5px;}
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BuenSabor</h1>
+        <style>
+            </style><h3>Postres</h3>
+<div class="menu-grid">
+    <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?auto=format&fit=crop&w=400&q=80" alt="Tarta de frutos rojos">
+        <h4>Tarta de frutos rojos</h4>
+        <p>Masa crujiente, crema pastelera, frutos rojos frescos.</p>
+        <span class="precio">$1100</span>
+    </div>
+    <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" alt="Mousse de chocolate">
+        <h4>Mousse de chocolate</h4>
+        <p>Chocolate negro, crema, huevos, virutas de chocolate.</p>
+        <span class="precio">$1300</span>
+    </div>
+</div>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#menu">Menú</a>
+            <a href="#reservas">Reservas</a>
+            <a href="#catering">Catering</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <div class="hero" id="inicio">
+        <h1>Despierta tus sentidos</h1>
+        <p>Restaurante & Catering para eventos inolvidables</p>
+    </div>
+
+    <section>
+        <h2>Nuestra propuesta</h2>
+        <p>
+            En BuenSabor fusionamos la experiencia de un restaurante acogedor con un servicio de catering a domicilio para todo tipo de eventos. Disfruta de una gastronomía creativa, ingredientes frescos y atención personalizada, ya sea en nuestro local o donde tú elijas.
+        </p>
+    </section>
+
+    <section id="menu-categorias">
+        <h2>Menú por Categorías</h2>
+        
+    
+        <h3>Entradas</h3>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" alt="Bruschettas">
+                <h4>Bruschettas</h4>
+                <p>Pan tostado con tomate, ajo y albahaca fresca.</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?auto=format&fit=crop&w=400&q=80" alt="Ensalada Caprese">
+                <h4>Ensalada Caprese</h4>
+                <p>Tomate, mozzarella, albahaca y aceite de oliva.</p>
+            </div>
+        </div>
+    
+        <h3>Platos principales</h3>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=400&q=80" alt="Salmón al eneldo">
+                <h4>Salmón al eneldo</h4>
+                <p>Lomo de salmón fresco con salsa de eneldo y limón.</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1516685018646-5499d0a7d42f?auto=format&fit=crop&w=400&q=80" alt="Risotto de setas">
+                <h4>Risotto de setas</h4>
+                <p>Cremoso arroz con setas frescas y parmesano.</p>
+            </div>
+        </div>
+    <!-- Ejemplo para una categoría -->
+<h3>Entradas</h3>
+<div class="menu-grid">
+    <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" alt="Bruschettas">
+        <h4>Bruschettas</h4>
+        <p>Pan tostado, tomate, ajo, albahaca.</p>
+        <span class="precio">$1200</span>
+    </div>
+    <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?auto=format&fit=crop&w=400&q=80" alt="Ensalada Caprese">
+        <h4>Ensalada Caprese</h4>
+        <p>Tomate, mozzarella, albahaca, aceite de oliva.</p>
+        <span class="precio">$1500</span>
+    </div>
+</div>
+
+<!-- Repite la estructura para Platos principales y Postres -->
+
+<style>
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-bottom: 32px;
+}
+.menu-item {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 16px;
+    text-align: center;
+}
+.menu-item img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+.menu-item h4 {
+    margin: 8px 0 4px 0;
+}
+.menu-item .precio {
+    display: block;
+    margin-top: 8px;
+    font-weight: bold;
+    color: #2e7d32;
+    font-size: 1.1em;
+}
+@media (max-width: 700px) {
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+    
+    
+        <h3>Postres</h3>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?auto=format&fit=crop&w=400&q=80" alt="Tarta de frutos rojos">
+                <h4>Tarta de frutos rojos</h4>
+                <p>Base crujiente, crema suave y frutos rojos frescos.</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" alt="Mousse de chocolate">
+                <h4>Mousse de chocolate</h4>
+                <p>Delicada mousse de chocolate negro con virutas.</p>
+            </div>
+        </div>
+    </section>
+        </div>
+    </section>
+
+    <section id="reservas">
+        <h2>Reserva tu mesa</h2>
+        <form id="form-reserva">
+            <input type="text" name="nombre" placeholder="Nombre completo" required>
+            <input type="date" name="fecha" required>
+            <input type="time" name="hora" required>
+            <input type="number" name="personas" placeholder="Nº de personas" min="1" required>
+            <input type="tel" name="telefono" placeholder="Teléfono de contacto" required>
+            <button type="submit">Reservar</button>
+        </form>
+    </section>
+
+    <section id="catering">
+        <h2>Solicita catering para tu evento</h2>
+        <form id="form-catering">
+            <input type="text" name="nombre" placeholder="Nombre completo" required>
+            <input type="text" name="evento" placeholder="Tipo de evento (boda, cumpleaños...)" required>
+            <input type="date" name="fecha" required>
+            <input type="text" name="direccion" placeholder="Dirección del evento" required>
+            <input type="tel" name="telefono" placeholder="Teléfono de contacto" required>
+            <textarea name="mensaje" placeholder="Detalles adicionales" rows="3"></textarea>
+            <button type="submit">Solicitar Catering</button>
+        </form>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>📍 Calle Sabores 123, Ciudad Gourmet<br>
+        📞 555-123-456<br>
+        ✉️ info@buensabor.com</p>
+        <div class="redes">
+            <a href="#" title="Instagram">Instagram</a>
+            <a href="#" title="Facebook">Facebook</a>
+            <a href="#" title="WhatsApp">WhatsApp</a>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2024 BuenSabor. Todos los derechos reservados.
+    </footer>
+
+
