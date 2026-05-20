@@ -30,23 +30,7 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1>BuenSabor</h1>
-        <style>
-            </style><h3>Postres</h3>
-<div class="menu-grid">
-    <div class="menu-item">
-        <img src="https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?auto=format&fit=crop&w=400&q=80" alt="Tarta de frutos rojos">
-        <h4>Tarta de frutos rojos</h4>
-        <p>Masa crujiente, crema pastelera, frutos rojos frescos.</p>
-        <span class="precio">$1100</span>
-    </div>
-    <div class="menu-item">
-        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" alt="Mousse de chocolate">
-        <h4>Mousse de chocolate</h4>
-        <p>Chocolate negro, crema, huevos, virutas de chocolate.</p>
-        <span class="precio">$1300</span>
-    </div>
+    
 </div>
         <nav>
             <a href="#inicio">Inicio</a>
@@ -174,6 +158,51 @@
     </section>
         </div>
     </section>
+    <section id="servicios-catering">
+        <h2>Servicios de Catering</h2>
+        <div class="servicios-grid">
+            <div class="servicio-item">
+                <img src="https://img.icons8.com/ios-filled/100/coffee.png" alt="Desayunos y coffee breaks" style="width:64px;height:64px;">
+                <h4>Desayunos y Coffee Breaks</h4>
+                <p>Servicio ideal para reuniones empresariales y eventos sociales, incluye café, infusiones, jugos, pastelería y snacks.</p>
+                <span class="capacidad">Capacidad: hasta 50 comensales</span>
+            </div>
+            <!-- Puedes agregar más servicios aquí siguiendo la misma estructura -->
+        </div>
+    </section>
+    
+    <style>
+    .servicios-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+        margin-bottom: 32px;
+    }
+    .servicio-item {
+        background: #fafafa;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        padding: 20px;
+        text-align: center;
+    }
+    .servicio-item img {
+        margin-bottom: 12px;
+    }
+    .servicio-item h4 {
+        margin: 8px 0 4px 0;
+    }
+    .servicio-item .capacidad {
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;
+        color: #1976d2;
+    }
+    @media (max-width: 700px) {
+        .servicios-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    </style>
 
     <section id="reservas">
         <h2>Reserva tu mesa</h2>
@@ -186,6 +215,145 @@
             <button type="submit">Reservar</button>
         </form>
     </section>
+    <section id="nuestro-chef">
+        <h2>Nuestro Chef</h2>
+        <a href="https://es.vecteezy.com/vectores-gratis/chef-logo" target="_blank" rel="noopener">
+            <img src="https://static.vecteezy.com/system/resources/previews/009/749/643/original/chef-logo-design-template-free-vector.jpg" alt="Chef Logo" style="width:90px; margin-bottom: 16px; border-radius: 50%;">
+        </a>
+        <div class="chefs-grid">
+            <div class="chef-item">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Chef Principal" class="chef-avatar">
+                <h4>Juan Pérez</h4>
+                <p><strong>Trayectoria:</strong> 20 años en cocina internacional, experiencia en restaurantes con estrellas Michelin en España y Francia.</p>
+                <p><strong>Especialidad:</strong> Cocina mediterránea y fusión contemporánea.</p>
+            </div>
+            <div class="chef-item">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sous Chef" class="chef-avatar">
+                <h4>María López</h4>
+                <p><strong>Trayectoria:</strong> 10 años en pastelería y repostería gourmet.</p>
+                <p><strong>Especialidad:</strong> Postres creativos y panes artesanales.</p>
+            </div>
+            <div class="chef-item">
+                <img src="https://randomuser.me/api/portraits/men/54.jpg" alt="Sous Chef" class="chef-avatar">
+                <h4>Carlos Gómez</h4>
+                <p><strong>Trayectoria:</strong> 8 años en cocina de autor y eventos privados.</p>
+                <p><strong>Especialidad:</strong> Platos de autor y cocina molecular.</p>
+            </div>
+        </div>
+    </section>
+    
+    <style>
+    .chefs-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+        margin-bottom: 32px;
+        margin-top: 16px;
+    }
+    .chef-item {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        padding: 16px;
+        text-align: center;
+    }
+    .chef-avatar {
+        width: 90px;
+        height: 90px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 12px;
+        border: 2px solid #eee;
+    }
+    @media (max-width: 700px) {
+        .chefs-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    </style><!-- Google Fonts en el <head> -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --color-bordo: #800020;
+    --color-dorado: #d4af37;
+    --color-crema: #fff8e1;
+    --color-blanco: #fff;
+}
+
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: var(--color-crema);
+    color: var(--color-bordo);
+    margin: 0;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+    color: var(--color-bordo);
+    letter-spacing: 1px;
+}
+
+.menu-item, .servicio-item {
+    background: var(--color-blanco);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(128,0,32,0.07);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid var(--color-dorado);
+}
+.menu-item:hover, .servicio-item:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(128,0,32,0.15);
+    border-color: var(--color-bordo);
+}
+
+.hero {
+    position: relative;
+    background: url('tu-imagen-hero.jpg') center/cover no-repeat;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(128,0,32,0.55); /* Bordó semitransparente */
+    z-index: 1;
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: var(--color-blanco);
+    text-align: center;
+}
+
+.menu-grid, .servicios-grid, .chefs-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-bottom: 32px;
+}
+@media (max-width: 700px) {
+    .menu-grid, .servicios-grid, .chefs-grid {
+        grid-template-columns: 1fr;
+    }
+    .hero {
+        min-height: 220px;
+    }
+    .hero-content h1 {
+        font-size: 1.7rem;
+    }
+}
+footer {
+    background: var(--color-bordo);
+    color: var(--color-crema);
+    text-align: center;
+    padding: 16px 0;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+</style>
 
     <section id="catering">
         <h2>Solicita catering para tu evento</h2>
@@ -215,5 +383,4 @@
     <footer>
         &copy; 2024 BuenSabor. Todos los derechos reservados.
     </footer>
-
 
